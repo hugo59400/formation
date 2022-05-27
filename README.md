@@ -15,3 +15,4 @@ Toutes les entités fonctionnent avec le CRUD
 Dans la liste des formations j’ai rajouté l’affichage des organismes formations pour savoir quelle formation est reliée à quel organisme
 
 J’ai retiré le champ id dans la liste de toutes les entités , J’ai afficher le nombre d’éléments dans la liste pour chaque entites 
+![formation](https://user-images.githubusercontent.com/45538763/170654192-43562543-24e8-4478-a188-28cfb1057937.png)

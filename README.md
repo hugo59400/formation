@@ -25,3 +25,4 @@ Les problèmes rencontrés :
 An exception has been thrown during the rendering of a template ("Entity of type 'App\Entity\OrganismeFormation' for IDs id(1) was not found").
 
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 
+![accueil](https://user-images.githubusercontent.com/45538763/170659125-8e62699d-e777-48d1-8e21-5451c61e687f.png)

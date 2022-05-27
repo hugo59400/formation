@@ -1,6 +1,6 @@
 # formation
 
-Pour acceder a l’accueil :http://127.0.0.1:8001/accueil
+Pour acceder a l’accueil :http://127.0.0.1:8000/accueil
 
 J’ai une navbar qui contient un lien vers chaque entité pour pouvoir faire le crud 
 

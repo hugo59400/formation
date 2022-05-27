@@ -30,3 +30,5 @@ An exception has been thrown during the rendering of a template ("Entity of type
 
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 
 
+Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps 
+

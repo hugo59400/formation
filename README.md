@@ -1,5 +1,5 @@
 # formation
-symfony
+
 Pour acceder a l’accueil :http://127.0.0.1:8001/accueil
 J’ai une navbar qui contient un lien vers chaque entité pour pouvoir faire le crud 
 mon fichier.env DATABASE_URL="mysql://root:root@127.0.0.1:3306/formation?serverVersion=8.0.28&charset=utf8mb4"

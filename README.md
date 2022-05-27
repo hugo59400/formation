@@ -4,7 +4,7 @@ Pour accéder a l’accueil :http://127.0.0.1:8000/accueil
 
 ![accueil](https://user-images.githubusercontent.com/45538763/170659125-8e62699d-e777-48d1-8e21-5451c61e687f.png)
 
-Exemple d'un liste d'entité :
+Exemple d'une liste sur une entité :
 
 ![formation](https://user-images.githubusercontent.com/45538763/170654192-43562543-24e8-4478-a188-28cfb1057937.png)
 
@@ -32,3 +32,6 @@ Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'él�
 
 Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps 
 
+Exemple de création d'un enregistrement dans une entité
+
+![creation](https://user-images.githubusercontent.com/45538763/170660013-05b43042-d658-4fe6-a008-92faedd0070c.png)

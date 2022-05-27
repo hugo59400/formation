@@ -33,7 +33,7 @@ Les choses à améliorer :
 
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 
 
-Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps 
+Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps, je sais qu'il faut utiliser TelType
 
 Exemple de création d'un enregistrement dans une entité
 

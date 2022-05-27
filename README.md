@@ -1,6 +1,6 @@
 # formation
 
-Pour acceder a l’accueil :http://127.0.0.1:8000/accueil
+Pour accéder a l’accueil :http://127.0.0.1:8000/accueil
 
 ![accueil](https://user-images.githubusercontent.com/45538763/170659125-8e62699d-e777-48d1-8e21-5451c61e687f.png)
 

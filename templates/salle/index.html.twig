@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Salle {% endblock %}
+
+{% block body %}
+{% set tasks_count = salles|length %}
+
+    <h1>Liste Salle {{tasks_count }}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+               
+                <th>Nom</th>
+                <th>actions</th>
+                    
+            </tr>
+        </thead>
+        <tbody>
+        {% for salle in salles %}
+            <tr>
+              
+                <td>{{ salle.nom }}</td>
+                <td>
+                    <a href="{{ path('app_salle_show', {'id': salle.id}) }}">Voir</a>
+                    <a href="{{ path('app_salle_edit', {'id': salle.id}) }}">Modifier</a>
+                </td>
+                
+
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">0 enregistrement en bdd</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_salle_new') }}">Creer</a>
+{% endblock %}

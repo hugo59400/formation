@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modif Organisme Formation{% endblock %}
+
+{% block body %}
+    <h1>Modif Organisme Formation</h1>
+
+    {{ include('organisme_formation/_form.html.twig', {'button_label': 'Mettre a jour'}) }}
+
+    <a href="{{ path('app_organisme_formation_index') }}">retour liste</a>
+
+    {{ include('organisme_formation/_delete_form.html.twig') }}
+{% endblock %}

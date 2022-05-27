@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation {% endblock %}
+
+{% block body %}
+{% set tasks_count = formations|length %}
+
+    <h1> Liste Formation {{tasks_count}} </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th>Intitule</th>
+               
+                <th>actions</th>
+                <th>OrganismeFormation</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for formation in formations %}
+            <tr>
+            
+                <td>{{ formation.intitule }}</td>           
+             
+                <td>
+                    <a href="{{ path('app_formation_show', {'id': formation.id}) }}">Voir</a>
+                    <a href="{{ path('app_formation_edit', {'id': formation.id}) }}">Modifier</a>
+                </td>
+
+              
+                <td>{{ formation.OrganismeFormation.nom }}</td>
+
+
+              
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">0 enregistrement en bdd</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_formation_new') }}"> <button >Creer </button ></a>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Promotion{% endblock %}
+
+{% block body %}
+{% set tasks_count = promotions|length %}
+
+    <h1> Liste Promotion {{tasks_count}} </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+               
+                <th>Nom</th>
+                <th>actions</th>
+                <th>Formation</th>
+                <th> Referent(formateur)</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        {% for promotion in promotions %}
+            <tr>
+                
+                <td>{{ promotion.nom }}</td>
+                <td>
+                    <a href="{{ path('app_promotion_show', {'id': promotion.id}) }}">Voir</a>
+                    <a href="{{ path('app_promotion_edit', {'id': promotion.id}) }}">Modifier</a>
+                </td>
+                <td>{{ promotion.formation  }}</td>
+                <td>{{ promotion.formateur  }}</td>
+              
+
+
+
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">0 enregistrement en bdd</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_promotion_new') }}">Creer</a>
+{% endblock %}

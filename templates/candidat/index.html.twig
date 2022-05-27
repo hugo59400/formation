@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Candidat{% endblock %}
+
+{% block body %}
+{% set tasks_count = candidats|length %}
+    <h1>Liste Candidat {{tasks_count }}  </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+              
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Num_tel</th>
+                <th>actions</th>
+                <th>Promotions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        {% for candidat in candidats %}
+            <tr>
+              
+                <td>{{ candidat.nom }}</td>
+                <td>{{ candidat.prenom }}</td>
+                <td>{{ candidat.email }}</td>
+                <td>{{ candidat.numTel }}</td>
+                <td>
+                    <a href="{{ path('app_candidat_show', {'id': candidat.id}) }}">Voir</a>
+                    <a href="{{ path('app_candidat_edit', {'id': candidat.id}) }}">Modifier </a>
+                </td>
+                 <td>{{ candidat.promotion }}</td> 
+
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">0 enregistrement en bdd</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_candidat_new') }}">Creer</a>
+{% endblock %}

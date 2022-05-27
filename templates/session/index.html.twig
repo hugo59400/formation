@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Session{% endblock %}
+
+{% block body %}
+{% set tasks_count = sessions|length %}
+
+    <h1>Liste Session {{ tasks_count}} </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+               
+                <th>Date_debut</th>
+                <th>Date_fin</th>
+                <th>Nom</th>
+                <th>actions</th>
+                <th>Formateur</th>
+                <th>Promotion</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for session in sessions %}
+            <tr>
+             
+                <td>{{ session.dateDebut ? session.dateDebut|date('Y-m-d') : '' }}</td>
+                <td>{{ session.dateFin ? session.dateFin|date('Y-m-d') : '' }}</td>
+                <td>{{ session.nom }}</td>
+                <td>
+                    <a href="{{ path('app_session_show', {'id': session.id}) }}">Voir</a>
+                    <a href="{{ path('app_session_edit', {'id': session.id}) }}">Modifier</a>
+                </td>
+                <td>{{ session.formateur }}</td>
+
+                 <td>{{ session.promotion }}</td>    
+              
+
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">0 enregistrement en bdd</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_session_new') }}">Creer</a>
+{% endblock %}

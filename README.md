@@ -22,6 +22,6 @@ J'ai rajouté une verification sur les champs email pour avoir un format valide
 
 Les problèmes rencontrés :
 - Quand je supprime un organisme de formation lié a une formation et que je retourne dans la liste des formations j'ai cette erreur :
--  An exception has been thrown during the rendering of a template ("Entity of type 'App\Entity\OrganismeFormation' for IDs id(1) was not found").
+An exception has been thrown during the rendering of a template ("Entity of type 'App\Entity\OrganismeFormation' for IDs id(1) was not found").
 
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 

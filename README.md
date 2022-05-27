@@ -28,6 +28,9 @@ Les problèmes rencontrés :
 - Quand je supprime un organisme de formation lié a une formation et que je retourne dans la liste des formations j'ai cette erreur :
 An exception has been thrown during the rendering of a template ("Entity of type 'App\Entity\OrganismeFormation' for IDs id(1) was not found").
 
+Les choses à améliorer : 
+- Ajouter du style sur les boutons ( ajouter , mettre a jour etc )
+
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 
 
 Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps 
@@ -37,7 +40,3 @@ Exemple de création d'un enregistrement dans une entité
 ![creation](https://user-images.githubusercontent.com/45538763/170660013-05b43042-d658-4fe6-a008-92faedd0070c.png)
 
 En résumé l'appli se lance ,je peux accéder facilement à l'interface de gestion, j'ai utilisé twig ,les routes sont cohérentes et les navigations sont présentes pour faire correspondre les pages
-
-
-
-

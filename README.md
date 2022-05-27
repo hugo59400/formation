@@ -35,3 +35,9 @@ Je n'ai pas mis la regex pour le numéro de téléphone par manque de temps
 Exemple de création d'un enregistrement dans une entité
 
 ![creation](https://user-images.githubusercontent.com/45538763/170660013-05b43042-d658-4fe6-a008-92faedd0070c.png)
+
+En résumé l'appli se lance ,je peux accéder facilement à l'interface de gestion, j'ai utilisé twig ,les routes sont cohérentes et les navigations sont présentes pour faire correspondre les pages
+
+
+
+

@@ -18,9 +18,9 @@ avant de faire symfony serve  faire npm i pour installer les dépendances
 
 Toutes les entités fonctionnent avec le CRUD 
 
-Dans la liste des formations j’ai rajouté l’affichage des organismes formations pour savoir quelle formation est reliée à quel organisme
+Dans la liste des formations j’ai rajouté le nom de l'organisme de formation pour savoir quelle formation est reliée à quel organisme
 
-J’ai retiré le champ id dans la liste de toutes les entités , J’ai afficher le nombre d’éléments dans la liste pour chaque entites 
+J’ai retiré le champ id dans la liste de toutes les entités , J’ai affiché le nombre d’éléments dans la liste pour chaque entites 
 
 J'ai rajouté une verification sur les champs email pour avoir un format valide 
 

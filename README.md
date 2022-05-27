@@ -30,6 +30,10 @@ An exception has been thrown during the rendering of a template ("Entity of type
 
 Les choses à améliorer : 
 - Ajouter du style sur les boutons ( ajouter , mettre a jour etc )
+- Pour la liste des sessions je dois ajouter le nom de la salle 
+
+![session](https://user-images.githubusercontent.com/45538763/170665563-66e3d39c-402b-41ce-baaa-d48abf76b4f2.png)
+
 
 Sur la route http://127.0.0.1:8000/accueil je n'ai pas affiché le nombre d'éléments pour chaque entité 
 
